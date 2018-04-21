@@ -20,7 +20,7 @@
 				<div>USA</div>
 				<div class='text-muted d-flex align-items-center keywords'>Keywords
 					<div class="form-group">
-						  <input type="text" class="form-control" id="usr">
+						  <input type="text" class="form-control" id="keywords" onkeyup="search()">
 					</div>
 				</div>
 				<div class='text-muted d-flex align-items-center price'>Price
@@ -85,9 +85,9 @@
 				</div>
 
 			</div>	
-			<div class="goods_item text-center">
+			<div class="goods_item text-center" id='items'>
 				<div class="item">
-					<div class="img">
+					<div class="img" id='item'>
 						<img src="img/1.png" alt="">
 						<div class="text">
 							<h4>Apple TV 32GB</h4>
@@ -96,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="item">
+				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/2.png" alt="">
 						<div class="text">
@@ -179,7 +179,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="item">
+				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/10.png" alt="">
 						<div class="text">
@@ -190,7 +190,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="item">
+				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/11.png" alt="">
 						<div class="text">
@@ -200,7 +200,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="item">
+				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/12.png" alt="">
 						<div class="text">
@@ -244,6 +244,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src='js/jquery-3.2.1.min.js'></script>
 	<script src="js/script.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
