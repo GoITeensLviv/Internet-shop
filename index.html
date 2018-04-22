@@ -24,13 +24,13 @@
 					</div>
 				</div>
 				<div class='text-muted d-flex align-items-center price'>Price
-					<div class="form-group">
-							  <input type="text" class="form-control" id="usr">
+						<div class="form-group">
+							  <input type="text" class="form-control" id="from" onkeyup="search()">
 						</div>
 						<span class='tyre'>-</span>
 						<div class="form-group">
-						  <input type="text" class="form-control" id="usr">
-					</div>
+						  <input type="text" class="form-control" id="to" onkeyup="search()">
+						</div>
 				</div>
 				<div class="form-check">
 	  					<label class="form-check-label">
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="another_wrapper">
-			<div class="second_filtr_block">
+			<div class="three_filtr_blocks">
 				<div class="wrapper_2">
 					<div id="m_body"> 
 					    <ul class="font-weight-bold"> 
@@ -81,15 +81,15 @@
 						  </li>
 						</ul> 
 					</div>
-					
+					<!-- Починай робити тут  -->
 				</div>
-
-			</div>	
+			</div>
+			
 			<div class="goods_item text-center" id='items'>
 				<div class="item">
 					<div class="img" id='item'>
 						<img src="img/1.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Apple TV 32GB</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$49.99</h5>
@@ -99,7 +99,7 @@
 				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/2.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Pebble Time</h4>
 							<h6 class='text-muted'>Red</h6>
 							<h5>$29.99</h5>
@@ -109,7 +109,7 @@
 				<div class="item">
 					<div class="img">
 						<img src="img/3.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Zendure 4-Port USB</h4>
 							<h6 class='text-muted'>White</h6>
 							<h5>$49.99</h5>
@@ -119,7 +119,7 @@
 				<div class="item">
 					<div class="img">
 						<img src="img/4.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Withings Smart Body
  							Analyzer ws-50</h4>
 							<h6 class='text-muted'>Black</h6>
@@ -130,7 +130,7 @@
 				<div class="item">
 					<div class="img">
 						<img src="img/5.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Apple TV 32GB</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$49.99</h5>
@@ -140,7 +140,7 @@
 				<div class="item">
 					<div class="img">
 						<img src="img/6.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Apple TV 32GB</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$49.99</h5>
@@ -150,7 +150,7 @@
 				<div class="item">
 					<div class="img">
 						<img src="img/7.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Ollo Clip New</h4>
 							<h6 class='text-muted'>Silver</h6>
 							<h5>$19.99</h5>
@@ -160,7 +160,7 @@
 				<div class="item">
 					<div class="img">
 						<img src="img/8.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Fitbit Charge HR Heart Rate 
 							and Activity Tracker</h4>
 							<h6 class='text-muted'>Black</h6>
@@ -171,7 +171,7 @@
 				<div class="item">
 					<div class="img">
 						<img src="img/9.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Apple Watch Sport 38mm 
 							Silver Aluminum Case</h4>
 							<h6 class='text-muted'>White</h6>
@@ -182,7 +182,7 @@
 				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/10.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Bose SoundLink 
 							On-Ear Headphones</h4>
 							<h6 class='text-muted'>White</h6>
@@ -193,7 +193,7 @@
 				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/11.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Apple TV 32GB</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$49.99</h5>
@@ -203,7 +203,7 @@
 				<div class="item" id='item'>
 					<div class="img">
 						<img src="img/12.png" alt="">
-						<div class="text">
+						<div class="text" id='text'>
 							<h4>Sonos Play-1 Wireless 
 							HiFi System</h4>
 							<h6 class='text-muted'>Black</h6>
