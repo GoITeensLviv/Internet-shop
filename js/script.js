@@ -46,15 +46,14 @@ let block_12 = {
 	title: 'Sonos Play-1 Wireless HiFi System',
 	price: '$99.99'
 }
-const blocks = [block_1 , block_2 , block_3 , block_4 , block_5 , 
-		 block_6 , block_7 , block_8 , block_9 , block_10 ,
-		 block_11 , block_12]
+const blocks = [block_1, block_2, block_3, block_4, block_5,
+		 block_6, block_7, block_8, block_9, block_10,
+		 block_11, block_12]
 let search = () => {
 	let num = document.getElementsByTagName("input")[0].value;
-	if (num != block_1.title){
+	if (num != block_1.title) {
 		console.log('not equal');
-	}
-	else{
+	} else {
 		console.log('equal');
 	}
 }

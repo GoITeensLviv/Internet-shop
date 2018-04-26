@@ -1,253 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-<header>
-	
-</header>	
-<main>
-	<section class="goods">
-		<div class="wrapper">
-			<div class="first_filtr_block d-flex font-weight-bold">
-				<div class='text-muted'>Sort by:</div>
-				<div>Best match</div>
-				<div class='text-muted'>Ship to:</div>
-				<div>USA</div>
-				<div class='text-muted d-flex align-items-center keywords'>Keywords
-					<div class="form-group">
-						  <input type="text" class="form-control" id="keywords" onkeyup="search()">
-					</div>
-				</div>
-				<div class='text-muted d-flex align-items-center price'>Price
+	<header>
+
+	</header>
+	<main>
+		<section class="goods">
+			<div class="wrapper">
+				<div class="first_filtr_block d-flex font-weight-bold">
+					<div class='text-muted'>Sort by:</div>
+					<div>Best match</div>
+					<div class='text-muted'>Ship to:</div>
+					<div>USA</div>
+					<div class='text-muted d-flex align-items-center keywords'>Keywords
 						<div class="form-group">
-							  <input type="text" class="form-control" id="from" onkeyup="search()">
+							<input type="text" class="form-control" id="keywords" onkeyup="search()">
+						</div>
+					</div>
+					<div class='text-muted d-flex align-items-center price'>Price
+						<div class="form-group">
+							<input type="text" class="form-control" id="from" onkeyup="search()">
 						</div>
 						<span class='tyre'>-</span>
 						<div class="form-group">
-						  <input type="text" class="form-control" id="to" onkeyup="search()">
+							<input type="text" class="form-control" id="to" onkeyup="search()">
 						</div>
-				</div>
-				<div class="form-check">
-	  					<label class="form-check-label">
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
 	   					 <input type="checkbox" class="form-check-input" value="">Free Shipping
 	 					</label>
-				</div>
-			</div>
-		</div>
-		<div class="another_wrapper">
-			<div class="three_filtr_blocks">
-				<div class="wrapper_2">
-					<div id="m_body"> 
-					    <ul class="font-weight-bold"> 
-						  <li><a href="#" onclick="menuOpen('s_mn_1');return(false)">Top sales</a> 
-							  <ul id="s_mn_1"> 
-							  <li><a href="#">1</a></li> 
-							  <li><a href="#">2</a></li> 
-							  </ul> 
-						  </li> 
-						  <li><a href="#" onclick="menuOpen('s_mn_2');return(false)">Brand focus</a> 
-							  <ul id="s_mn_2"> 
-							  <li><a href="#">1</a></li> 
-							  <li><a href="#">2</a></li> 
-							  </ul> 
-						  </li> 
-						  <li><a href="#" onclick="menuOpen('s_mn_5');return(false)">Hi-tech</a> 
-							  <ul id="s_mn_5"> 
-							  <li><a href="#">CELL PHONES</a></li>
-							  <li><a href="#">CAMERAS</a></li>
-							  <li><a href="#">COMPUTERS</a></li> 
-							  <li><a href="#">TV, AUDIO</a></li> 
-							  <li><a href="#">VIDEO GAMES</a></li> 
-							  </ul> 
-					  	   </li>
-					  	   <li><a href="#" onclick="menuOpen('s_mn_3');return(false)">Home</a> 
-							  <ul id="s_mn_3"> 
-							  <li><a href="#">1</a></li>
-							  <li><a href="#">2</a></li> 
-							  <li><a href="#">3</a></li> 
-							  </ul> 
-						  </li> 
-						  <li><a href="#" onclick="menuOpen('s_mn_4');return(false)">Sale</a> 
-							  <ul id="s_mn_4"> 
-							  <li><a href="#">1</a></li>
-							  <li><a href="#">2</a></li> 
-							  <li><a href="#">3</a></li> 
-							  </ul> 
-						  </li>
-						</ul> 
-					</div>
-					<!-- Починай робити тут  -->
-				</div>
-			</div>
-			
-			<div class="goods_item text-center" id='items'>
-				<div class="item">
-					<div class="img" id='item'>
-						<img src="img/1.png" alt="">
-						<div class="text" id='text'>
-							<h4>Apple TV 32GB</h4>
-							<h6 class='text-muted'>Black</h6>
-							<h5>$49.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item" id='item'>
-					<div class="img">
-						<img src="img/2.png" alt="">
-						<div class="text" id='text'>
-							<h4>Pebble Time</h4>
-							<h6 class='text-muted'>Red</h6>
-							<h5>$29.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="img/3.png" alt="">
-						<div class="text" id='text'>
-							<h4>Zendure 4-Port USB</h4>
-							<h6 class='text-muted'>White</h6>
-							<h5>$49.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="img/4.png" alt="">
-						<div class="text" id='text'>
-							<h4>Withings Smart Body
- 							Analyzer ws-50</h4>
-							<h6 class='text-muted'>Black</h6>
-							<h5>$39.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="img/5.png" alt="">
-						<div class="text" id='text'>
-							<h4>Apple TV 32GB</h4>
-							<h6 class='text-muted'>Black</h6>
-							<h5>$49.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="img/6.png" alt="">
-						<div class="text" id='text'>
-							<h4>Apple TV 32GB</h4>
-							<h6 class='text-muted'>Black</h6>
-							<h5>$49.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="img/7.png" alt="">
-						<div class="text" id='text'>
-							<h4>Ollo Clip New</h4>
-							<h6 class='text-muted'>Silver</h6>
-							<h5>$19.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="img/8.png" alt="">
-						<div class="text" id='text'>
-							<h4>Fitbit Charge HR Heart Rate 
-							and Activity Tracker</h4>
-							<h6 class='text-muted'>Black</h6>
-							<h5>$19.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="img">
-						<img src="img/9.png" alt="">
-						<div class="text" id='text'>
-							<h4>Apple Watch Sport 38mm 
-							Silver Aluminum Case</h4>
-							<h6 class='text-muted'>White</h6>
-							<h5>$49.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item" id='item'>
-					<div class="img">
-						<img src="img/10.png" alt="">
-						<div class="text" id='text'>
-							<h4>Bose SoundLink 
-							On-Ear Headphones</h4>
-							<h6 class='text-muted'>White</h6>
-							<h5>$119.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item" id='item'>
-					<div class="img">
-						<img src="img/11.png" alt="">
-						<div class="text" id='text'>
-							<h4>Apple TV 32GB</h4>
-							<h6 class='text-muted'>Black</h6>
-							<h5>$49.99</h5>
-						</div>
-					</div>
-				</div>
-				<div class="item" id='item'>
-					<div class="img">
-						<img src="img/12.png" alt="">
-						<div class="text" id='text'>
-							<h4>Sonos Play-1 Wireless 
-							HiFi System</h4>
-							<h6 class='text-muted'>Black</h6>
-							<h5>$99.99</h5>
-						</div>
 					</div>
 				</div>
 			</div>
-		</div>	
-	</section>
+			<div class="another_wrapper">
+				<div class="three_filtr_blocks">
+					<div class="wrapper_2">
+						<div id="m_body">
+							<ul class="font-weight-bold">
+								<li><a href="#" onclick="menuOpen('s_mn_1');return(false)">Top sales</a>
+									<ul id="s_mn_1">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_2');return(false)">Brand focus</a>
+									<ul id="s_mn_2">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_5');return(false)">Hi-tech</a>
+									<ul id="s_mn_5">
+										<li><a href="#">CELL PHONES</a></li>
+										<li><a href="#">CAMERAS</a></li>
+										<li><a href="#">COMPUTERS</a></li>
+										<li><a href="#">TV, AUDIO</a></li>
+										<li><a href="#">VIDEO GAMES</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_3');return(false)">Home</a>
+									<ul id="s_mn_3">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_4');return(false)">Sale</a>
+									<ul id="s_mn_4">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- wrapper-3  -->
 
-</main>
-<footer>
-	
-</footer>
+						<div calss="wrapper-3">
+							<div id="m2-body">
 
-	<script type="text/javascript"> 
-		var m_id = new Array('s_mn_1','s_mn_2','s_mn_5','s_mn_3','s_mn_4'); 
-		listStart = function allclose() { 
-		  for (i=0; i < m_id.length; i++){ 
-		  document.getElementById(m_id[i]).style.display = "none"; 
-		  } 
-		} 
-		function menuOpen(id){ 
-		  for (i=0; i < m_id.length; i++){ 
-		  if (id != m_id[i]){ 
-		  document.getElementById(m_id[i]).style.display = "none"; 
-		  } 
-		  } 
-		  if (document.getElementById(id).style.display == "block"){ 
-		  document.getElementById(id).style.display = "none"; 
-		  }else{ 
-		  document.getElementById(id).style.display = "block"; 
-		  } 
-		} 
-		window.onload=listStart; 
-</script>
+								<p id="ava">AVAILABLE</p>
+								<hr>
+								<p><input name="dzen" type="radio" value="dzen"> In Storage</p>
+								<p><input name="dzen" type="radio" value="dzen"> In Online-Shop</p>
+
+								<hr>
+								<p id="ava">BRANDS</p>
+								<hr>
+
+
+								<p><input type="checkbox" name="a" value="1417"> Aplee</p>
+								<p><input type="checkbox" name="a" value="1417"> JBJ</p>
+								<p><input type="checkbox" name="a" value="1417"> Bose</p>
+								<p><input type="checkbox" name="a" value="1417"> Nest</p>
+
+
+
+							</div>
+
+						</div>
+
+						<!-- wrapper-4  -->
+
+						<div calss="wrapper-4">
+							<div id="m2-body">
+
+								<p id="ava">CONDITION</p>
+
+								<hr>
+								<p><input type="checkbox" name="a" value="1417"> New</p>
+								<p><input type="checkbox" name="a" value="1417"> Manufacturer Refurbished</p>
+								<p><input type="checkbox" name="a" value="1417"> Seller Refurbished</p>
+								<p><input type="checkbox" name="a" value="1417"> Used</p>
+								<p><input type="checkbox" name="a" value="1417"> For Parts or not Working</p>
+
+
+
+							</div>
+
+						</div>
+
+
+						<!-- wrapper-5  -->
+
+						<div calss="wrapper-5">
+							<div id="m2-body">
+
+								<p id="ava">DELIVERY OPTIONS</p>
+
+								<hr>
+
+								<p><input name2="dzen" type="radio" value="dzen">FREE</p>
+								<p><input name2="dzen" type="radio" value="dzen"><img src="img/1200px-Dollar_Sign.svg.png" height="15px" width="15px" alt="">4.99</p>
+
+								<table border="1px" width="1px" height="50px"></table>
+
+							</div>
+
+						</div>
+
+
+
+					</div>
+				</div>
+
+
+
+				<div class="goods_item text-center" id='items'>
+					<div class="item">
+						<div class="img" id='item'>
+							<img src="img/1.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple TV 32GB</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$49.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item" id='item'>
+						<div class="img">
+							<img src="img/2.png" alt="">
+							<div class="text" id='text'>
+								<h4>Pebble Time</h4>
+								<h6 class='text-muted'>Red</h6>
+								<h5>$29.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="img/3.png" alt="">
+							<div class="text" id='text'>
+								<h4>Zendure 4-Port USB</h4>
+								<h6 class='text-muted'>White</h6>
+								<h5>$49.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="img/4.png" alt="">
+							<div class="text" id='text'>
+								<h4>Withings Smart Body Analyzer ws-50</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$39.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="img/5.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple TV 32GB</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$49.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="img/6.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple TV 32GB</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$49.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="img/7.png" alt="">
+							<div class="text" id='text'>
+								<h4>Ollo Clip New</h4>
+								<h6 class='text-muted'>Silver</h6>
+								<h5>$19.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="img/8.png" alt="">
+							<div class="text" id='text'>
+								<h4>Fitbit Charge HR Heart Rate and Activity Tracker</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$19.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="img/9.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple Watch Sport 38mm Silver Aluminum Case</h4>
+								<h6 class='text-muted'>White</h6>
+								<h5>$49.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item" id='item'>
+						<div class="img">
+							<img src="img/10.png" alt="">
+							<div class="text" id='text'>
+								<h4>Bose SoundLink On-Ear Headphones</h4>
+								<h6 class='text-muted'>White</h6>
+								<h5>$119.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item" id='item'>
+						<div class="img">
+							<img src="img/11.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple TV 32GB</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$49.99</h5>
+							</div>
+						</div>
+					</div>
+					<div class="item" id='item'>
+						<div class="img">
+							<img src="img/12.png" alt="">
+							<div class="text" id='text'>
+								<h4>Sonos Play-1 Wireless HiFi System</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$99.99</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer>
+
+	</footer>
+
+	<script type="text/javascript">
+		var m_id = new Array('s_mn_1', 's_mn_2', 's_mn_5', 's_mn_3', 's_mn_4');
+		listStart = function allclose() {
+			for (i = 0; i < m_id.length; i++) {
+				document.getElementById(m_id[i]).style.display = "none";
+			}
+		}
+
+		function menuOpen(id) {
+			for (i = 0; i < m_id.length; i++) {
+				if (id != m_id[i]) {
+					document.getElementById(m_id[i]).style.display = "none";
+				}
+			}
+			if (document.getElementById(id).style.display == "block") {
+				document.getElementById(id).style.display = "none";
+			} else {
+				document.getElementById(id).style.display = "block";
+			}
+		}
+		window.onload = listStart;
+
+	</script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src='js/jquery-3.2.1.min.js'></script>
 	<script src="js/script.js"></script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script>
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
+	</script>
 </body>
+
 </html>
-*//bebebebebebbebe*//
-*//вийщло чи нє*//
