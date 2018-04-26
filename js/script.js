@@ -78,20 +78,20 @@ let priceFrom = () => {
 		
 
 let cellPhones = () => {
-	$('.item').fadeOut(1000);
-	$('.cellPhones').show(1000);
+	$('.item').fadeOut(0);
+	$('.cellPhones').fadeIn(1500);
 }
 let computers = () => {
-	$('.item').fadeOut(1000);
-	$('.computers').show(1000);
+	$('.item').fadeOut(0);
+	$('.computers').fadeIn(1500);
 }
 let tv_audio = () => {
-	$('.item').fadeOut(1000);
-	$('.tv_audio').show(1000);
+	$('.item').fadeOut(0);
+	$('.tv_audio').fadeIn(1500);
 }
 let cameras = () => {
-	$('.item').fadeOut(1000);
-	$('.cameras').show(1000);
+	$('.item').fadeOut(0);
+	$('.cameras').fadeIn(1500);
 }
 let view_all = () => {
 	$('.item').show(1000);
