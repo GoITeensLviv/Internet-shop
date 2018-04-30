@@ -54,6 +54,7 @@ body {
 }
 
 .wrapper_2 {
+
 	display: flex;
 	flex-direction: column;
 	margin-right: 30px;
@@ -128,6 +129,17 @@ ul {
 
 /*++++++++++++++++++++ wrapper-3 +++++++++++++++++ */
 
+.body-3 {
+	margin-top: 30px;
+	padding-left: 20px;
+	text-align: left;
+	background: white;
+	width: 290px;
+	border-radius: 10px;
+	max-height: auto;
+	font-weight: 2em;
+}
+
 .wrapper-3 {
 	margin-top: 30px;
 	background: white;
@@ -139,16 +151,7 @@ ul {
 	height: 240px;
 }
 
-#m2-body {
-	margin-top: 30px;
-	padding-left: 20px;
-	text-align: left;
-	background: white;
-	width: 290px;
-	border-radius: 10px;
-	max-height: auto;
-	font-weight: 2em;
-}
+
 
 #ava {
 	text-align: left;
@@ -161,13 +164,67 @@ ul {
 	text-align: left;
 }
 
+.aval {
+	text-align: left;
+	border-bottom: 2em;
+}
 
 
 /*---------------------wrapper-3+++++++++++++++++ */
 
 /*++++++++++++++++++++ wrapper-4 +++++++++++++++++ */
 
+.body-4 {
+	margin-top: 30px;
+	padding-left: 20px;
+	text-align: left;
+	background: white;
+	width: 290px;
+	border-radius: 10px;
+	max-height: auto;
+	font-weight: 2em;
+
+
+}
+
 /*---------------------wrapper-4+++++++++++++++++ */
+
+/*++++++++++++++++++++ wrapper-5 +++++++++++++++++ */
+
+.body-5 {
+	margin-top: 30px;
+	padding-left: 20px;
+	text-align: left;
+	background: white;
+	width: 290px;
+	border-radius: 10px;
+	max-height: auto;
+	font-weight: 2em;
+	text-align: center;
+	height: 100px;
+
+}
+
+.big-bos {
+	text-align: center;
+	width: 290px;
+	background-color: white;
+}
+
+.line {
+	border-right: 2px solid black;
+	float: left;
+	text-align: center;
+}
+
+.linesa {
+	float: left;
+	padding-left: 20px;
+	text-align: center;
+
+}
+
+/*---------------------wrapper-5+++++++++++++++++ */
 
 /* Goods */
 
