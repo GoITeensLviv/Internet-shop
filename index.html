@@ -1,294 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-	<header>
-
-	</header>
-	<main>
-		<section class="goods">
-			<div class="wrapper">
-				<div class="first_filtr_block d-flex font-weight-bold">
-					<div class='text-muted'>Sort by:</div>
-					<div>Best match</div>
-					<div class='text-muted'>Ship to:</div>
-					<div>USA</div>
-					<div class='text-muted d-flex align-items-center keywords'>Keywords
-						<div class="form-group">
-							<input type="text" class="form-control" id="keywords" onkeyup="search()">
-						</div>
+<header>
+	
+</header>	
+<main>
+	<section class="goods">
+		<div class="wrapper">
+			<div class="first_filtr_block d-flex font-weight-bold">
+				<div class='text-muted'>Sort by:</div>
+				<div>Best match</div>
+				<div class='text-muted'>Ship to:</div>
+				<div>USA</div>
+				<div class='text-muted d-flex align-items-center keywords'>Keywords
+					<div class="form-group">
+						  <input type="text" class="form-control" id="keywords" onkeyup="search()">
 					</div>
-					<div class='text-muted d-flex align-items-center price'>Price
+				</div>
+				<div class='text-muted d-flex align-items-center price'>Price
 						<div class="form-group">
-
-							<input type="text" class="form-control" id="from" onkeyup="search()">
+							  <input type="text" class="form-control" id="from" onkeyup="priceFrom()">
 						</div>
 						<span class='tyre'>-</span>
 						<div class="form-group">
-							<input type="text" class="form-control" id="to" onkeyup="search()">
-
-							<input type="text" class="form-control" id="from" onkeyup="priceFrom()">
+						  <input type="text" class="form-control" id="to" onkeyup="priceTo()">
 						</div>
-						<span class='tyre'>-</span>
-						<div class="form-group">
-							<input type="text" class="form-control" id="to" onkeyup="priceTo()">
-						</div>
-					</div>
-					<div class="form-check">
-						<label class="form-check-label">
+				</div>
+				<div class="form-check">
+	  					<label class="form-check-label">
 	   					 <input type="checkbox" class="form-check-input" value="">Free Shipping
 	 					</label>
+				</div>
+			</div>
+		</div>
+		<div class="another_wrapper">
+			<div class="three_filtr_blocks">
+				<div class="wrapper_2">
+					<div id="m_body"> 
+					    <ul class="font-weight-bold"> 
+						  <li><a href="#" onclick="menuOpen('s_mn_1');return(false)">Top sales</a> 
+							  <ul id="s_mn_1"> 
+							  <li><a href="#">1</a></li> 
+							  <li><a href="#">2</a></li> 
+							  </ul> 
+						  </li> 
+						  <li><a href="#" onclick="menuOpen('s_mn_2');return(false)">Brand focus</a> 
+							  <ul id="s_mn_2"> 
+							  <li><a href="#">1</a></li> 
+							  <li><a href="#">2</a></li> 
+							  </ul> 
+						  </li> 
+						  <li><a href="#" onclick="menuOpen('s_mn_5');return(false)">Hi-tech</a> 
+							  <ul id="s_mn_5"> 
+							  <li><a href="#" onclick="cellPhones()">CELL PHONES</a></li>
+							  <li><a href="#" onclick="cameras()">CAMERAS</a></li>
+							  <li><a href="#" onclick="computers()">COMPUTERS</a></li> 
+							  <li><a href="#" onclick="tv_audio()">TV, AUDIO</a></li> 
+							  <li><a href="#" onclick="view_all()">VIEW ALL</a></li> 
+							  </ul> 
+					  	   </li>
+					  	   <li><a href="#" onclick="menuOpen('s_mn_3');return(false)">Home</a> 
+							  <ul id="s_mn_3"> 
+							  <li><a href="#">1</a></li>
+							  <li><a href="#">2</a></li> 
+							  <li><a href="#">3</a></li> 
+							  </ul> 
+						  </li> 
+						  <li><a href="#" onclick="menuOpen('s_mn_4');return(false)">Sale</a> 
+							  <ul id="s_mn_4"> 
+							  <li><a href="#">1</a></li>
+							  <li><a href="#">2</a></li> 
+							  <li><a href="#">3</a></li> 
+							  </ul> 
+						  </li>
+						</ul> 
+					</div>
+					<div class="second_col">
+						<div class="content">
+							<div class="available font-weight-bold">
+								<div class='pad'>
+									Available
+								</div>
+							</div>
+							<div>
+								<div class='pad d-flex justify-content-between'><div><label class="font-weight-bold"><input type="radio">In Storage</label></div><div class="val text-muted">45</div></div>
+								<div class='pad d-flex justify-content-between'><div><label class="font-weight-bold"><input type="radio">In Online Shop</label></div><div class="val text-muted">12</div></div>
+							
+								<div class="brands d-flex justify-content-between font-weight-bold">
+									<div class="pad">Brands</div><div class="pad"><a href="#">All</a></div>
+								</div>
+								<div class='pad d-flex justify-content-between'><div><label class="font-weight-bold"><input type="checkbox">Apple</label></div>
+								<div class="val text-muted">32</div>
+								</div>
+								<div class='pad d-flex justify-content-between'><div><label  class="font-weight-bold"><input type="checkbox">JBL</label></div>
+								<div class="val text-muted">14</div>
+								</div>
+								<div class='pad d-flex justify-content-between'><div><label  class="font-weight-bold"><input type="checkbox">Bose</label></div>
+								<div class="val text-muted">3</div>
+								</div>
+								<div class='pad d-flex justify-content-between'><div><label  class="font-weight-bold"><input type="checkbox">Nest</label></div>
+								<div class="val text-muted">5</div>
+								</div>	
+							</div>
+						</div>					
+					</div>
+					<div class="third_col">
+						<div class="condition d-flex justify-content-between font-weight-bold">
+							<div class="pad">Condition</div><div class="pad"><a href="#">All</a></div>
+						</div>
+						<div class="d-flex flex-column pad font-weight-bold">
+							<label><input type="checkbox">New</label>
+							<label><input type="checkbox">Manufacturer Refurbished</label>
+							<label><input type="checkbox">Seller Refurbished</label>
+							<label><input type="checkbox">Used</label>
+							<label><input type="checkbox">For Parts or not Working</label>	
+						</div>	
 					</div>
 				</div>
 			</div>
-		</section>
-	</main>
-
-	<div class="another_wrapper">
-		<div class="three_filtr_blocks">
-			<div class="wrapper_2">
-				<div id="m_body">
-					<ul class="font-weight-bold">
-						<li><a href="#" onclick="menuOpen('s_mn_1');return(false)">Top sales</a>
-							<ul id="s_mn_1">
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-							</ul>
-						</li>
-						<li><a href="#" onclick="menuOpen('s_mn_2');return(false)">Brand focus</a>
-							<ul id="s_mn_2">
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-							</ul>
-						</li>
-						<li><a href="#" onclick="menuOpen('s_mn_5');return(false)">Hi-tech</a>
-							<ul id="s_mn_5">
-								<li><a href="#">CELL PHONES</a></li>
-								<li><a href="#">CAMERAS</a></li>
-								<li><a href="#">COMPUTERS</a></li>
-								<li><a href="#">TV, AUDIO</a></li>
-								<li><a href="#">VIDEO GAMES</a></li>
-							</ul>
-						</li>
-						<li><a href="#" onclick="menuOpen('s_mn_3');return(false)">Home</a>
-							<ul id="s_mn_3">
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-							</ul>
-						</li>
-						<li><a href="#" onclick="menuOpen('s_mn_4');return(false)">Sale</a>
-							<ul id="s_mn_4">
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="another_wrapper">
-					<div class="three_filtr_blocks">
-						<div class="wrapper_2">
-							<div id="m_body">
-								<ul class="font-weight-bold">
-									<li><a href="#" onclick="menuOpen('s_mn_1');return(false)">Top sales</a>
-										<ul id="s_mn_1">
-											<li><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-										</ul>
-									</li>
-									<li><a href="#" onclick="menuOpen('s_mn_2');return(false)">Brand focus</a>
-										<ul id="s_mn_2">
-											<li><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-										</ul>
-									</li>
-									<li><a href="#" onclick="menuOpen('s_mn_5');return(false)">Hi-tech</a>
-										<ul id="s_mn_5">
-											<li><a href="#" onclick="cellPhones()">CELL PHONES</a></li>
-											<li><a href="#" onclick="cameras()">CAMERAS</a></li>
-											<li><a href="#" onclick="computers()">COMPUTERS</a></li>
-											<li><a href="#" onclick="tv_audio()">TV, AUDIO</a></li>
-											<li><a href="#" onclick="view_all()">VIEW ALL</a></li>
-										</ul>
-									</li>
-									<li><a href="#" onclick="menuOpen('s_mn_3');return(false)">Home</a>
-										<ul id="s_mn_3">
-											<li><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-										</ul>
-									</li>
-									<li><a href="#" onclick="menuOpen('s_mn_4');return(false)">Sale</a>
-										<ul id="s_mn_4">
-											<li><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<!-- Починай робити тут  -->
-							<!-- wrapper-3  -->
-
-							<div calss="wrapper-3">
-								<div class="body-3">
-
-									<p id="ava">AVAILABLE</p>
-									<hr>
-									<p><input name="dzen" type="radio" value="dzen"> In Storage</p>
-									<p><input name="dzen" type="radio" value="dzen"> In Online-Shop</p>
-
-									<hr>
-									<p id="ava">BRANDS</p>
-									<hr>
-
-
-									<p><input type="checkbox" name="a" value="1417"> Aplee</p>
-									<p><input type="checkbox" name="a" value="1417"> JBJ</p>
-									<p><input type="checkbox" name="a" value="1417"> Bose</p>
-									<p><input type="checkbox" name="a" value="1417"> Nest</p>
-
-
-
-								</div>
-
-							</div>
-							<!-- wrapper-4  -->
-
-							<div calss="wrapper-4">
-								<div class="body-4">
-
-									<p id="ava">CONDITION</p>
-
-									<hr>
-									<p><input type="checkbox" name="a" value="1417"> New</p>
-									<p><input type="checkbox" name="a" value="1417"> Manufacturer Refurbished</p>
-									<p><input type="checkbox" name="a" value="1417"> Seller Refurbished</p>
-									<p><input type="checkbox" name="a" value="1417"> Used</p>
-									<p><input type="checkbox" name="a" value="1417"> For Parts or not Working</p>
-
-
-
-								</div>
-
-							</div>
-
-							<!-- wrapper-5  -->
-
-							<div class="wrapper-5">
-
-								<div class="body-5">
-
-									<p id="ava">DELIVERY OPTIONS</p>
-
-									<hr>
-
-									<div class="big-bos">
-										
-										<div class="line"><input name2="dzen" type="radio" value="dzen">FREE</div>
-										<div class="linesa">
-											<p><input name2="dzen" type="radio" value="dzen"><img src="img/1200px-Dollar_Sign.svg.png" height="15px" width="15px" alt="">4.99</p>
-										</div>
-
-									</div>
-								</div>
-
-							</div>
+			
+			<div class="goods_item text-center" id='items'>
+				<div class="item tv_audio">
+					<div class="img" id='item'>
+						<img src="img/1.png" alt="">
+						<div class="text" id='text'>
+							<h4>Apple TV 32GB</h4>
+							<h6 class='text-muted'>Black</h6>
+							<h5>$49.99</h5>
 						</div>
 					</div>
-
-
-
-
-
-
-
-
-
 				</div>
-			</div>
-		</div>
-
-		<div class="goods_item text-center" id='items'>
-			<div class="item tv_audio">
-				<div class="img" id='item'>
-					<img src="img/1.png" alt="">
-					<div class="text" id='text'>
-						<h4>Apple TV 32GB</h4>
-						<h6 class='text-muted'>Black</h6>
-						<h5>$49.99</h5>
+				<div class="item" id='item'>
+					<div class="img">
+						<img src="img/2.png" alt="">
+						<div class="text" id='text'>
+							<h4>Pebble Time</h4>
+							<h6 class='text-muted'>Red</h6>
+							<h5>$29.99</h5>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="goods_item text-center" id='items'>
-			<div class="item">
-				<div class="img" id='item'>
-					<img src="img/1.png" alt="">
-					<div class="text" id='text'>
-						<h4>Apple TV 32GB</h4>
-						<h6 class='text-muted'>Black</h6>
-						<h5>$49.99</h5>
+				<div class="item">
+					<div class="img">
+						<img src="img/3.png" alt="">
+						<div class="text" id='text'>
+							<h4>Zendure 4-Port USB</h4>
+							<h6 class='text-muted'>White</h6>
+							<h5>$49.99</h5>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="item" id='item'>
-				<div class="img">
-					<img src="img/2.png" alt="">
-					<div class="text" id='text'>
-						<h4>Pebble Time</h4>
-						<h6 class='text-muted'>Red</h6>
-						<h5>$29.99</h5>
+				<div class="item">
+					<div class="img">
+						<img src="img/4.png" alt="">
+						<div class="text" id='text'>
+							<h4>Withings Smart Body
+ 							Analyzer ws-50</h4>
+							<h6 class='text-muted'>Black</h6>
+							<h5>$39.99</h5>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="img">
-					<img src="img/3.png" alt="">
-					<div class="text" id='text'>
-						<h4>Zendure 4-Port USB</h4>
-						<h6 class='text-muted'>White</h6>
-						<h5>$49.99</h5>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="img">
-					<img src="img/4.png" alt="">
-					<div class="text" id='text'>
-						<h4>Withings Smart Body Analyzer ws-50</h4>
-						<h6 class='text-muted'>Black</h6>
-						<h5>$39.99</h5>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="img">
-					<img src="img/5.png" alt="">
-					<div class="text" id='text'>
-						<h4>Apple TV 32GB</h4>
-						<h6 class='text-muted'>Black</h6>
-						<h5>$49.99</h5>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="img">
-					<img src="img/6.png" alt="">
-					<div class="text" id='text'>
-						<h4>Apple TV 32GB</h4>
-						<h6 class='text-muted'>Black</h6>
-						<h5>$49.99</h5>
-					</div>
-
 				</div>
 				<div class="item cellPhones">
 					<div class="img">
@@ -319,159 +198,175 @@
 							<h5>$19.99</h5>
 						</div>
 					</div>
-					<div class="item">
-						<div class="img">
-							<img src="img/7.png" alt="">
-							<div class="text" id='text'>
-								<h4>Ollo Clip New</h4>
-								<h6 class='text-muted'>Silver</h6>
-								<h5>$19.99</h5>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="img">
-							<img src="img/8.png" alt="">
-							<div class="text" id='text'>
-								<h4>Fitbit Charge HR Heart Rate and Activity Tracker</h4>
-								<h6 class='text-muted'>Black</h6>
-								<h5>$19.99</h5>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="img">
-							<img src="img/9.png" alt="">
-							<div class="text" id='text'>
-								<h4>Apple Watch Sport 38mm Silver Aluminum Case</h4>
-								<h6 class='text-muted'>White</h6>
-								<h5>$49.99</h5>
-							</div>
-						</div>
-					</div>
-					<div class="item" id='item'>
-						<div class="img">
-							<img src="img/10.png" alt="">
-							<div class="text" id='text'>
-								<h4>Bose SoundLink On-Ear Headphones</h4>
-								<h6 class='text-muted'>White</h6>
-								<h5>$119.99</h5>
-							</div>
-						</div>
-					</div>
-					<div class="item" id='item'>
-						<div class="img">
-							<img src="img/11.png" alt="">
-							<div class="text" id='text'>
-								<h4>Apple TV 32GB</h4>
-								<h6 class='text-muted'>Black</h6>
-								<h5>$49.99</h5>
-							</div>
-						</div>
-					</div>
-					<div class="item" id='item'>
-						<div class="img">
-							<img src="img/12.png" alt="">
-							<div class="text" id='text'>
-								<h4>Sonos Play-1 Wireless HiFi System</h4>
-								<h6 class='text-muted'>Black</h6>
-								<h5>$99.99</h5>
-							</div>
-
-						</div>
-						<div class="item tv_audio" id='item'>
-							<div class="img">
-								<img src="img/10.png" alt="">
-								<div class="text" id='text'>
-									<h4>Bose SoundLink On-Ear Headphones</h4>
-									<h6 class='text-muted'>White</h6>
-									<h5>$119.99</h5>
-								</div>
-							</div>
-						</div>
-						<div class="item tv_audio" id='item'>
-							<div class="img">
-								<img src="img/11.png" alt="">
-								<div class="text" id='text'>
-									<h4>Dynamik</h4>
-									<h6 class='text-muted'>Black</h6>
-									<h5>$49.99</h5>
-								</div>
-							</div>
-						</div>
-						<div class="item computers" id='item'>
-							<div class="img">
-								<img src="img/12.png" alt="">
-								<div class="text" id='text'>
-									<h4>Apple MackBook Pro Retina 17</h4>
-									<h6 class='text-muted'>Black</h6>
-									<h5>$899.99</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<footer>
-
-					</footer>
-
-					<script type="text/javascript">
-						var m_id = new Array('s_mn_1', 's_mn_2', 's_mn_5', 's_mn_3', 's_mn_4');
-						listStart = function allclose() {
-							for (i = 0; i < m_id.length; i++) {
-								document.getElementById(m_id[i]).style.display = "none";
-							}
-						}
-
-						function menuOpen(id) {
-							for (i = 0; i < m_id.length; i++) {
-								if (id != m_id[i]) {
-									document.getElementById(m_id[i]).style.display = "none";
-								}
-							}
-							if (document.getElementById(id).style.display == "block") {
-								document.getElementById(id).style.display = "none";
-							} else {
-								document.getElementById(id).style.display = "block";
-							}
-						}
-						window.onload = listStart;
-					</script>
-					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-					<script src='js/jquery-3.2.1.min.js'></script>
-					<script src="js/script.js"></script>
-					<script>
-						document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-					</script>
-
-
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						16.
-						<ul class="nav navbar-nav">
-							17.
-							<li class="active"><a href="#">Пункт 1</a></li>
-							18.
-							<li><a href="#">Пункт 2</a></li>
-							19.
-							<li><a href="#">Пункт 3</a></li>
-							20.
-							<li><a href="#">Пункт 4</a></li>
-							21.
-							<li><a href="#">Пункт 5</a></li>
-							22.
-						</ul>
-						23.
-					</div>
-					<!-- /.navbar-collapse -->
-					24.
 				</div>
-				<!-- /.container-fluid -->
-				25.
-				</nav>
+				<div class="item">
+					<div class="img">
+						<img src="img/8.png" alt="">
+						<div class="text" id='text'>
+							<h4>Fitbit Charge HR Heart Rate 
+							and Activity Tracker</h4>
+							<h6 class='text-muted'>Black</h6>
+							<h5>$19.99</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img">
+						<img src="img/9.png" alt="">
+						<div class="text" id='text'>
+							<h4>Apple Watch Sport 38mm 
+							Silver Aluminum Case</h4>
+							<h6 class='text-muted'>White</h6>
+							<h5>$49.99</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item tv_audio" id='item'>
+					<div class="img">
+						<img src="img/10.png" alt="">
+						<div class="text" id='text'>
+							<h4>Bose SoundLink 
+							On-Ear Headphones</h4>
+							<h6 class='text-muted'>White</h6>
+							<h5>$119.99</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item tv_audio" id='item'>
+					<div class="img">
+						<img src="img/11.png" alt="">
+						<div class="text" id='text'>
+							<h4>Dynamik</h4>
+							<h6 class='text-muted'>Black</h6>
+							<h5>$49.99</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item computers" id='item'>
+					<div class="img">
+						<img src="img/12.png" alt="">
+						<div class="text" id='text'>
+							<h4>Apple MackBook Pro Retina 17</h4>
+							<h6 class='text-muted'>Black</h6>
+							<h5>$899.99</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class='pages text-center'>
+		<div class='pages_block'>
+			<div class="left_arrow">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+			<div class="nums">
+				<div class="nums_item">1</div>
+				<div class="nums_item">2</div>
+				<div class="nums_item">3</div>
+				<div class="nums_item">4</div>
+				<div class="nums_item">5</div>
+				<div class="nums_item">6</div>
+				<div class="nums_item">7</div>
+				<div class="nums_item">8</div>
+			</div>
+			<div class="right_arrow">
+				<i class="fas fa-arrow-right"></i>
+			</div>
+		</div>
+	</section>
+	<section class="clothes">
+		<div class="clothes_block">
+			<div class="sm_title">Best Sellers</div>
+			<div class="clothes_row">
+				<div class="clothes_item">
+					<div class="img text-center">
+						<img src="img/Clothes/Photo.png">
+					</div>
+					<div class="text text-center" id='text'>
+						<h4>Zendure 4-Port USB</h4>
+						<h6 class='text-muted'>White</h6>
+						<h5>$49.99</h5>
+					</div>
+				</div>
+				<div class="clothes_item">
+					<div class="img text-center">
+						<img src="img/Clothes/Photod.png">
+					</div>
+					<div class="text text-center" id='text'>
+						<h4>Zendure 4-Port USB</h4>
+						<h6 class='text-muted'>White</h6>
+						<h5>$49.99</h5>
+					</div>
+				</div>
+				<div class="clothes_item">
+					<div class="img text-center">
+						<img src="img/Clothes/dPhoto.png">
+					</div>
+					<div class="text text-center" id='text'>
+						<h4>Zendure 4-Port USB</h4>
+						<h6 class='text-muted'>White</h6>
+						<h5>$49.99</h5>
+					</div>
+				</div>
+				<div class="clothes_item">
+					<div class="img text-center">
+						<img src="img/Clothes/Phwwoto.png">
+					</div>
+					<div class="text text-center" id='text'>
+						<h4>Zendure 4-Port USB</h4>
+						<h6 class='text-muted'>White</h6>
+						<h5>$49.99</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class='people'>
+		<div class="people_block">
+			<div class="ppl_title">
+				<div class="big"></div>
+				<div class="sm"></div>
+			</div>
+			<div class="people_item">
+				<div class="sub"></div>
+				<div class="sup">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	
+</footer>
 
-
+	<script type="text/javascript"> 
+		var m_id = new Array('s_mn_1','s_mn_2','s_mn_5','s_mn_3','s_mn_4'); 
+		listStart = function allclose() { 
+		  for (i=0; i < m_id.length; i++){ 
+		  document.getElementById(m_id[i]).style.display = "none"; 
+		  } 
+		} 
+		function menuOpen(id){ 
+		  for (i=0; i < m_id.length; i++){ 
+		  if (id != m_id[i]){ 
+		  document.getElementById(m_id[i]).style.display = "none"; 
+		  } 
+		  } 
+		  if (document.getElementById(id).style.display == "block"){ 
+		  document.getElementById(id).style.display = "none"; 
+		  }else{ 
+		  document.getElementById(id).style.display = "block"; 
+		  } 
+		} 
+		window.onload=listStart; 
+</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src='js/jquery-3.2.1.min.js'></script>
+	<script src="js/script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
-
 </html>
