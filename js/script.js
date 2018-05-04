@@ -64,10 +64,10 @@
 // 		}
 // 	}
 // }
-let price_of_the_goods = document.getElementsByTagName("h5").textContent;
-let array_of_prices = [];
-array_of_prices.push(price_of_the_goods)
-console.log(array_of_prices);
+// let price_of_the_goods = document.getElementsByTagName("h5").textContent;
+// let array_of_prices = [];
+// array_of_prices.push(price_of_the_goods)
+// console.log(array_of_prices);
 
 let priceFrom = () => {
 	let inputFrom = document.getElementById('from').value;
@@ -142,7 +142,27 @@ let condition_manufacturer = () => {
 	}
 }
 
+let inStorage = () => {
+	$('.item').fadeOut(0);
+	$('.inStorage').fadeIn(1000);
+}
+let checkbox_3 = document.getElementById('free')
 
+let free = () => {
+	if(checkbox_3.checked){
+		$('.item').fadeOut(0);
+		$('.free').fadeIn(1500);
+	}else{
+		$('.free').fadeOut(0);
+		$('.item').show(1000);
+	}
+}
+
+
+
+// let priceFr = () => {
+// 	console.log( $( this ).innerHTML = '1' )
+// }
 
 
 
