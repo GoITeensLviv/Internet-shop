@@ -97,9 +97,50 @@ let view_all = () => {
 	$('.item').show(1000);
 }
 
+let checkbox_1 = document.getElementById('cb_apple');
+let checkbox_2 = document.getElementById('cb_bose');
+let apple = () => {
+	if(checkbox_1.checked){
+		$('.item').fadeOut(0);
+		$('.apple').fadeIn(1500);
+	}else{
+		$('.apple').fadeOut(0);
+		$('.item').show(1000);
+	}
+}
+let bose = () => {
+	if(checkbox_2.checked){
+		$('.item').fadeOut(0);
+		$('.bose').fadeIn(1500);
+	}else{
+		$('.bose').fadeOut(0);
+		$('.item').show(1000);
+	}
+}
 
+// Condition
 
+let condition_1 = document.getElementById('new')
+let condition_2 = document.getElementById('manufacturer')
+let condition_new = () => {
+	if(condition_1.checked){
+		$('.item').fadeOut(0);
+		$('.new').fadeIn(1500);
+	}else{
+		$('.new').fadeOut(0);
+		$('.item').show(1000);
+	}
+}
 
+let condition_manufacturer = () => {
+	if(condition_2.checked){
+		$('.item').fadeOut(0);
+		$('.manufacturer').fadeIn(1500);
+	}else{
+		$('.manufacturer').fadeOut(0);
+		$('.item').show(1000);
+	}
+}
 
 
 
