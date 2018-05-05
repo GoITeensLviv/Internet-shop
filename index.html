@@ -30,7 +30,7 @@
 				</div>
 				<div class='text-muted d-flex align-items-center price'>Price
 						<div class="form-group">
-							  <input type="text" class="form-control" id="from" onkeyup="priceFrom()">
+							  <input type="text" class="form-control" id="from" onkeyup="priceFr()">
 						</div>
 						<span class='tyre'>-</span>
 						<div class="form-group">
@@ -38,8 +38,8 @@
 						</div>
 				</div>
 				<div class="form-check">
-	  					<label class="form-check-label">
-	   					 <input type="checkbox" class="form-check-input" value="">Free Shipping
+	  					<label class="form-check-label" onchange="free()">
+	   					 <input type="checkbox" class="form-check-input" value="" id='free'>Free Shipping
 	 					</label>
 				</div>
 			</div>
@@ -94,7 +94,7 @@
 								</div>
 							</div>
 							<div>
-								<div class='pad d-flex justify-content-between'><div><label class="font-weight-bold"><input type="radio">In Storage</label></div><div class="val text-muted">45</div></div>
+								<div class='pad d-flex justify-content-between'><div><label class="font-weight-bold" onchange='inStorage()'><input type="radio" id='cb_apple'>In Storage</label></div><div class="val text-muted">45</div></div>
 								<div class='pad d-flex justify-content-between'><div><label class="font-weight-bold"><input type="radio">In Online Shop</label></div><div class="val text-muted">12</div></div>
 							
 								<div class="brands d-flex justify-content-between font-weight-bold">
@@ -131,7 +131,7 @@
 			</div>
 			
 			<div class="goods_item text-center" id='items'>
-				<div class="item tv_audio apple new">
+				<div class="item tv_audio apple new inStorage">
 					<div class="img" id='item'>
 						<img src="img/1.png" alt="">
 						<div class="text" id='text'>
@@ -144,7 +144,7 @@
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
 </form>
 				</div>
-				<div class="item manufacturer" id='item'>
+				<div class="item manufacturer free seller_refurbished" id='item'>
 					<div class="img">
 						<img src="img/2.png" alt="">
 						<div class="text" id='text'>
@@ -170,7 +170,7 @@
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
 </form>
 				</div>
-				<div class="item">
+				<div class="item free">
 					<div class="img">
 						<img src="img/4.png" alt="">
 						<div class="text" id='text'>
@@ -184,7 +184,7 @@
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
 </form>
 				</div>
-				<div class="item cellPhones apple">
+				<div class="item cellPhones apple inStorage">
 					<div class="img">
 						<img src="img/5.png" alt="">
 						<div class="text" id='text'>
@@ -223,7 +223,7 @@
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
 </form>
 				</div>
-				<div class="item">
+				<div class="item free">
 					<div class="img">
 						<img src="img/8.png" alt="">
 						<div class="text" id='text'>
@@ -237,7 +237,7 @@
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
 </form>
 				</div>
-				<div class="item">
+				<div class="item inStorage">
 					<div class="img">
 						<img src="img/9.png" alt="">
 						<div class="text" id='text'>
@@ -278,7 +278,7 @@
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
 </form>
 				</div>
-				<div class="item computers apple" id='item'>
+				<div class="item computers apple inStorage" id='item'>
 					<div class="img">
 						<img src="img/12.png" alt="">
 						<div class="text" id='text'>
@@ -421,6 +421,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src='js/jquery-3.2.1.min.js'></script>
 	<script src="js/script.js"></script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	
 </body>
 </html>
