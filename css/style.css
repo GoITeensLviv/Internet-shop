@@ -249,7 +249,40 @@ label{
 	bottom: 0px;
 	background: #CECECEFF;
 }
+/* Сторінки при відкритті товарів */
+.story1{
+width: 100%;
+height: 300px;
+display: flex;
+-webkit-justify-content: space-around; /* Safari */
 
+ justify-content: space-around;
+
+
+}
+.pricess{
+
+width: 100%;
+}
+
+.fotka1{
+	padding-left: 10%;
+width: 30%;
+height: 250px;
+
+}
+.bada{
+	
+width: 70%;
+height: auto;
+
+
+
+
+}
+.wetra {
+	width: 100%;
+}
 /* Pages */
 
 .pages{
@@ -262,10 +295,7 @@ label{
 	margin-top: 50px;
 	background: white;
 	border-radius: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
+	
 }
 .nums{
 	display: flex;
