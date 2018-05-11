@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/index.html">
 </head>
+
 <body>
+<<<<<<< HEAD
 <header>
 	
 </header>	
@@ -27,24 +29,49 @@
 				<div class='text-muted d-flex align-items-center keywords'>Keywords
 					<div class="form-group">
 						  <input type="text" class="form-control" id="keywords" onkeyup="search()">
+=======
+	<header>
+
+	</header>
+	<main>
+
+
+		<section class="goods">
+			<div class="wrapper">
+				<div class="first_filtr_block d-flex font-weight-bold">
+					<div class='text-muted'>Sort by:</div>
+					<div>Best match</div>
+					<div class='text-muted'>Ship to:</div>
+					<div>USA</div>
+					<div class='text-muted d-flex align-items-center keywords'>Keywords
+						<div class="form-group">
+							<input type="text" class="form-control" id="keywords" onkeyup="search()">
+						</div>
+>>>>>>> 2b13cfb876f2d5df0f906cf343315d4195a97709
 					</div>
 				</div>
 				<div class='text-muted d-flex align-items-center price'>Price
+					<div class='text-muted d-flex align-items-center price'>Price
 						<div class="form-group">
 							  <input type="text" class="form-control" id="from" onkeyup="priceFr()">
+							<input type="text" class="form-control" id="from" onkeyup="priceFr()">
 						</div>
 						<span class='tyre'>-</span>
 						<div class="form-group">
 						  <input type="text" class="form-control" id="to" onkeyup="priceTo()">
+							<input type="text" class="form-control" id="to" onkeyup="priceTo()">
 						</div>
 				</div>
 				<div class="form-check">
 	  					<label class="form-check-label" onchange="free()">
+					</div>
+					<div class="form-check">
+						<label class="form-check-label" onchange="free()">
 	   					 <input type="checkbox" class="form-check-input" value="" id='free'>Free Shipping
 	 					</label>
+					</div>
 				</div>
 			</div>
-		</div>
 		<div class="another_wrapper">
 			<div class="three_filtr_blocks">
 				<div class="wrapper_2">
@@ -106,9 +133,87 @@
 								</div>
 								<div class='pad d-flex justify-content-between'><div><label  class="font-weight-bold"><input type="checkbox">JBL</label></div>
 								<div class="val text-muted">0</div>
+			<div class="another_wrapper">
+				<div class="three_filtr_blocks">
+					<div class="wrapper_2">
+						<div id="m_body">
+							<ul class="font-weight-bold">
+								<li><a href="#" onclick="menuOpen('s_mn_1');return(false)">Top sales</a>
+									<ul id="s_mn_1">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_2');return(false)">Brand focus</a>
+									<ul id="s_mn_2">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_5');return(false)">Hi-tech</a>
+									<ul id="s_mn_5">
+										<li><a href="#" onclick="cellPhones()">CELL PHONES</a></li>
+										<li><a href="#" onclick="cameras()">CAMERAS</a></li>
+										<li><a href="#" onclick="computers()">COMPUTERS</a></li>
+										<li><a href="#" onclick="tv_audio()">TV, AUDIO</a></li>
+										<li><a href="#" onclick="view_all()">VIEW ALL</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_3');return(false)">Home</a>
+									<ul id="s_mn_3">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+									</ul>
+								</li>
+								<li><a href="#" onclick="menuOpen('s_mn_4');return(false)">Sale</a>
+									<ul id="s_mn_4">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="second_col">
+							<div class="content">
+								<div class="available font-weight-bold">
+									<div class='pad'>
+										Available
+									</div>
 								</div>
 								<div class='pad d-flex justify-content-between'><div><label  class="font-weight-bold" onchange='bose()'><input type="checkbox" id='cb_bose'>Bose</label></div>
 								<div class="val text-muted">1</div>
+								<div>
+									<div class='pad d-flex justify-content-between'>
+										<div><label class="font-weight-bold" onchange='inStorage()'><input type="radio" id='cb_apple'>In Storage</label></div>
+										<div class="val text-muted">45</div>
+									</div>
+									<div class='pad d-flex justify-content-between'>
+										<div><label class="font-weight-bold"><input type="radio">In Online Shop</label></div>
+										<div class="val text-muted">12</div>
+									</div>
+
+									<div class="brands d-flex justify-content-between font-weight-bold">
+										<div class="pad">Brands</div>
+										<div class="pad"><a href="#">All</a></div>
+									</div>
+									<div class='pad d-flex justify-content-between'>
+										<div><label class="font-weight-bold" onchange="apple()"><input type="checkbox" id='cb_apple'>Apple</label></div>
+										<div class="val text-muted">4</div>
+									</div>
+									<div class='pad d-flex justify-content-between'>
+										<div><label class="font-weight-bold"><input type="checkbox">JBL</label></div>
+										<div class="val text-muted">0</div>
+									</div>
+									<div class='pad d-flex justify-content-between'>
+										<div><label class="font-weight-bold" onchange='bose()'><input type="checkbox" id='cb_bose'>Bose</label></div>
+										<div class="val text-muted">1</div>
+									</div>
+									<div class='pad d-flex justify-content-between'>
+										<div><label class="font-weight-bold"><input type="checkbox">Nest</label></div>
+										<div class="val text-muted">0</div>
+									</div>
 								</div>
 								<div class='pad d-flex justify-content-between'><div><label  class="font-weight-bold"><input type="checkbox">Nest</label></div>
 								<div class="val text-muted">0</div>
@@ -127,6 +232,20 @@
 							<label><input type="checkbox">Used</label>
 							<label><input type="checkbox">For Parts or not Working</label>	
 						</div>	
+						</div>
+						<div class="third_col">
+							<div class="condition d-flex justify-content-between font-weight-bold">
+								<div class="pad">Condition</div>
+								<div class="pad"><a href="#">All</a></div>
+							</div>
+							<div class="d-flex flex-column pad font-weight-bold">
+								<label onchange="condition_new()"><input type="checkbox" id='new'>New</label>
+								<label onchange="condition_manufacturer()"><input type="checkbox" id='manufacturer'>Manufacturer Refurbished</label>
+								<label><input type="checkbox">Seller Refurbished</label>
+								<label><input type="checkbox">Used</label>
+								<label><input type="checkbox">For Parts or not Working</label>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -139,7 +258,28 @@
 							<h4>Apple TV 32GB</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$49.99</h5>
+
+				<div class="goods_item text-center" id='items'>
+					<div class="item tv_audio apple new inStorage">
+						<div class="img" id='item'>
+							<img src="img/1.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple TV 32GB</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$49.99</h5>
+							</div>
 						</div>
+
+						<nav>
+							<ul>
+
+								<li><a href="css/index.html">More details</a></li>
+
+
+							</ul>
+						</nav>
+						
+
 					</div>
 					<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -152,7 +292,29 @@
 							<h4>Pebble Time</h4>
 							<h6 class='text-muted'>Red</h6>
 							<h5>$29.99</h5>
+					<div class="item manufacturer free seller_refurbished" id='item'>
+						<div class="img">
+							<img src="img/2.png" alt="">
+							<div class="text" id='text'>
+								<h4>Pebble Time</h4>
+								<h6 class='text-muted'>Red</h6>
+								<h5>$29.99</h5>
+							</div>
 						</div>
+						
+					
+						
+						<nav>
+							<ul>
+
+								<li><a href="css/index2.html">More details</a></li>
+
+
+							</ul>
+						</nav>
+						
+					
+						
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -165,7 +327,24 @@
 							<h4>Zendure 4-Port USB</h4>
 							<h6 class='text-muted'>White</h6>
 							<h5>$49.99</h5>
+					<div class="item manufacturer">
+						<div class="img">
+							<img src="img/3.png" alt="">
+							<div class="text" id='text'>
+								<h4>Zendure 4-Port USB</h4>
+								<h6 class='text-muted'>White</h6>
+								<h5>$49.99</h5>
+							</div>
 						</div>
+						<nav>
+							<ul>
+
+								<li><a href="css/index3.html">More details</a></li>
+
+
+							</ul>
+						</nav>
+					
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -179,7 +358,23 @@
  							Analyzer ws-50</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$39.99</h5>
+					<div class="item free">
+						<div class="img">
+							<img src="img/4.png" alt="">
+							<div class="text" id='text'>
+								<h4>Withings Smart Body Analyzer ws-50</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$39.99</h5>
+							</div>
 						</div>
+						<nav>
+							<ul>
+
+								<li><a href="css/index4.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -192,7 +387,23 @@
 							<h4>Apple IPhone X 64GB</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$899.99</h5>
+					<div class="item cellPhones apple inStorage">
+						<div class="img">
+							<img src="img/5.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple IPhone X 64GB</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$899.99</h5>
+							</div>
 						</div>
+						<nav>
+							<ul>
+
+								<li><a href="css/index5.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -205,7 +416,23 @@
 							<h4>Apple IMac 2017</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$999.99</h5>
+					<div class="item computers apple">
+						<div class="img">
+							<img src="img/6.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple IMac 2017</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$999.99</h5>
+							</div>
 						</div>
+							<nav>
+							<ul>
+
+								<li><a href="css/index6.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -218,7 +445,23 @@
 							<h4>Ollo Clip New</h4>
 							<h6 class='text-muted'>Silver</h6>
 							<h5>$19.99</h5>
+					<div class="item cameras new">
+						<div class="img">
+							<img src="img/7.png" alt="">
+							<div class="text" id='text'>
+								<h4>Ollo Clip New</h4>
+								<h6 class='text-muted'>Silver</h6>
+								<h5>$19.99</h5>
+							</div>
 						</div>
+							<nav>
+							<ul>
+
+								<li><a href="css/index7.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -232,7 +475,23 @@
 							and Activity Tracker</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$19.99</h5>
+					<div class="item free">
+						<div class="img">
+							<img src="img/8.png" alt="">
+							<div class="text" id='text'>
+								<h4>Fitbit Charge HR Heart Rate and Activity Tracker</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$19.99</h5>
+							</div>
 						</div>
+							<nav>
+							<ul>
+
+								<li><a href="css/index8.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -246,7 +505,23 @@
 							Silver Aluminum Case</h4>
 							<h6 class='text-muted'>White</h6>
 							<h5>$49.99</h5>
+					<div class="item inStorage">
+						<div class="img">
+							<img src="img/9.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple Watch Sport 38mm Silver Aluminum Case</h4>
+								<h6 class='text-muted'>White</h6>
+								<h5>$49.99</h5>
+							</div>
 						</div>
+						<nav>
+							<ul>
+
+								<li><a href="css/index9.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -260,10 +535,27 @@
 							On-Ear Headphones</h4>
 							<h6 class='text-muted'>White</h6>
 							<h5>$119.99</h5>
+					<div class="item tv_audio bose" id='item'>
+						<div class="img">
+							<img src="img/10.png" alt="">
+							<div class="text" id='text'>
+								<h4>Bose SoundLink On-Ear Headphones</h4>
+								<h6 class='text-muted'>White</h6>
+								<h5>$119.99</h5>
+							</div>
+							
 						</div>
 									<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
 </form>
+						<nav>
+							<ul>
+
+								<li><a href="css/index10.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 				</div>
 				<div class="item tv_audio new" id='item'>
@@ -273,7 +565,23 @@
 							<h4>Dynamik</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$49.99</h5>
+					<div class="item tv_audio new" id='item'>
+						<div class="img">
+							<img src="img/11.png" alt="">
+							<div class="text" id='text'>
+								<h4>Dynamik</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$49.99</h5>
+							</div>
 						</div>
+							<nav>
+							<ul>
+
+								<li><a href="css/index10.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -286,7 +594,23 @@
 							<h4>Apple MackBook Pro Retina 17</h4>
 							<h6 class='text-muted'>Black</h6>
 							<h5>$899.99</h5>
+					<div class="item computers apple inStorage" id='item'>
+						<div class="img">
+							<img src="img/12.png" alt="">
+							<div class="text" id='text'>
+								<h4>Apple MackBook Pro Retina 17</h4>
+								<h6 class='text-muted'>Black</h6>
+								<h5>$899.99</h5>
+							</div>
 						</div>
+							<nav>
+							<ul>
+
+								<li><a href="css/index11.html">More details</a></li>
+
+
+							</ul>
+						</nav>
 					</div>
 								<form>
 <input type="button" value="Кнопка" onClick='file:///C:/Users/GOITeens/Desktop/victor-myha/Internet-shop/css/index.html"'>
@@ -328,6 +652,11 @@
 						<h6 class='text-muted'>White</h6>
 						<h5>$49.99</h5>
 					</div>
+		</section>
+		<section class='pages text-center'>
+			<div class='pages_block'>
+				<div class="left_arrow">
+					<i class="fas fa-arrow-left"></i>
 				</div>
 				<div class="clothes_item">
 					<div class="img text-center">
@@ -338,25 +667,79 @@
 						<h6 class='text-muted'>White</h6>
 						<h5>$49.99</h5>
 					</div>
+				<div class="nums">
+					<div class="nums_item">1</div>
+					<div class="nums_item">2</div>
+					<div class="nums_item">3</div>
+					<div class="nums_item">4</div>
+					<div class="nums_item">5</div>
+					<div class="nums_item">6</div>
+					<div class="nums_item">7</div>
+					<div class="nums_item">8</div>
+				</div>
+				<div class="right_arrow">
+					<i class="fas fa-arrow-right"></i>
 				</div>
 				<div class="clothes_item">
 					<div class="img text-center">
 						<img src="img/Clothes/dPhoto.png">
+			</div>
+		</section>
+		<section class="clothes">
+			<div class="clothes_block">
+				<div class="sm_title">Best Sellers</div>
+				<div class="clothes_row">
+					<div class="clothes_item">
+						<div class="img text-center">
+							<img src="img/Clothes/Photo.png">
+						</div>
+						<div class="text text-center" id='text'>
+							<h4>Zendure 4-Port USB</h4>
+							<h6 class='text-muted'>White</h6>
+							<h5>$49.99</h5>
+						</div>
 					</div>
 					<div class="text text-center" id='text'>
 						<h4>Zendure 4-Port USB</h4>
 						<h6 class='text-muted'>White</h6>
 						<h5>$49.99</h5>
+					<div class="clothes_item">
+						<div class="img text-center">
+							<img src="img/Clothes/Photod.png">
+						</div>
+						<div class="text text-center" id='text'>
+							<h4>Zendure 4-Port USB</h4>
+							<h6 class='text-muted'>White</h6>
+							<h5>$49.99</h5>
+						</div>
 					</div>
 				</div>
 				<div class="clothes_item">
 					<div class="img text-center">
 						<img src="img/Clothes/Phwwoto.png">
+					<div class="clothes_item">
+						<div class="img text-center">
+							<img src="img/Clothes/dPhoto.png">
+						</div>
+						<div class="text text-center" id='text'>
+							<h4>Zendure 4-Port USB</h4>
+							<h6 class='text-muted'>White</h6>
+							<h5>$49.99</h5>
+						</div>
 					</div>
 					<div class="text text-center" id='text'>
 						<h4>Zendure 4-Port USB</h4>
 						<h6 class='text-muted'>White</h6>
 						<h5>$49.99</h5>
+					<div class="clothes_item">
+						<div class="img text-center">
+							<img src="img/Clothes/Phwwoto.png">
+						</div>
+						<div class="text text-center" id='text'>
+							<h4>Zendure 4-Port USB</h4>
+							<h6 class='text-muted'>White</h6>
+							<h5>$49.99</h5>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -374,21 +757,61 @@
 					<div class="titles text-left"><h5 class="font-weight-bold">Celia Fielss</h5><h6 class="text-muted">UI Expert</h6></div></div>
 					<div class="sup">
 						<p>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+		</section>
+		<section class='people'>
+			<div class="people_block text-center">
+				<div class="ppl_title">
+					<div class="big">
+						<h1 class="font-weight-bold">What Our Customers Have to Say</h1>
 					</div>
+					<div class="sm text-muted">Couple of Words About This Stories Section</div>
 				</div>
 				<div class="people_item">
 					<div class="sub"><img src="img/faces/Phosto.png"><div class="titles text-left"><h5 class="font-weight-bold">Alexandr Lee</h5><h6 class="text-muted">Founder</h6></div></div>
 					<div class="sup">
 						<p>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+				<div class="d-flex justify-content-around flex-wrap">
+					<div class="people_item">
+						<div class="sub"><img src="img/faces/Photdadwado.png">
+							<div class="titles text-left">
+								<h5 class="font-weight-bold">Celia Fielss</h5>
+								<h6 class="text-muted">UI Expert</h6>
+							</div>
+						</div>
+						<div class="sup">
+							<p>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+						</div>
 					</div>
 				</div>
 				<div class="people_item">
 					<div class="sub"><img src="img/faces/Photo.png"><div class="titles text-left"><h5 class="font-weight-bold">Celia Fielss</h5><h6 class="text-muted">Product manager</h6></div></div>
 					<div class="sup">
 						<p>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+					<div class="people_item">
+						<div class="sub"><img src="img/faces/Phosto.png">
+							<div class="titles text-left">
+								<h5 class="font-weight-bold">Alexandr Lee</h5>
+								<h6 class="text-muted">Founder</h6>
+							</div>
+						</div>
+						<div class="sup">
+							<p>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+						</div>
+					</div>
+					<div class="people_item">
+						<div class="sub"><img src="img/faces/Photo.png">
+							<div class="titles text-left">
+								<h5 class="font-weight-bold">Celia Fielss</h5>
+								<h6 class="text-muted">Product manager</h6>
+							</div>
+						</div>
+						<div class="sup">
+							<p>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+						</div>
 					</div>
 				</div>
 			</div>
+<<<<<<< HEAD
 		</div>
 	</section>
 </main>
@@ -439,12 +862,46 @@
 		} 
 		window.onload=listStart; 
 </script>
+=======
+		</section>
+	</main>
+	<footer>
+
+	</footer>
+
+	<script type="text/javascript">
+		var m_id = new Array('s_mn_1', 's_mn_2', 's_mn_5', 's_mn_3', 's_mn_4');
+		listStart = function allclose() {
+			for (i = 0; i < m_id.length; i++) {
+				document.getElementById(m_id[i]).style.display = "none";
+			}
+		}
+
+		function menuOpen(id) {
+			for (i = 0; i < m_id.length; i++) {
+				if (id != m_id[i]) {
+					document.getElementById(m_id[i]).style.display = "none";
+				}
+			}
+			if (document.getElementById(id).style.display == "block") {
+				document.getElementById(id).style.display = "none";
+			} else {
+				document.getElementById(id).style.display = "block";
+			}
+		}
+		window.onload = listStart;
+	</script>
+>>>>>>> 2b13cfb876f2d5df0f906cf343315d4195a97709
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src='js/jquery-3.2.1.min.js'></script>
 	<script src="js/script.js"></script>
+<<<<<<< HEAD
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	
+=======
+
+>>>>>>> 2b13cfb876f2d5df0f906cf343315d4195a97709
 </body>
 </html>
