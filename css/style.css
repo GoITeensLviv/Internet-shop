@@ -373,7 +373,7 @@ label{
 footer{
 	background: #222;
 	color:white;
-	height: 175px;
+	height: auto;
 }
 .upper_footer{
 	margin-left: 10%;
@@ -412,6 +412,9 @@ ul li{
 }
 .links i {
 	margin-left: 15px;
+}
+.spans{
+	margin-bottom: 50px;
 }
 @media (max-width: 749px){
 	.another_wrapper{
