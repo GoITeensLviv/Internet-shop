@@ -95,35 +95,22 @@
 									</div>
 								</div>
 								<div>
-									<div class='pad d-flex justify-content-between'>
-										<div><label class="font-weight-bold" onchange='inStorage()'><input type="radio" id='cb_apple'>In Storage</label></div>
-										<div class="val text-muted">45</div>
-									</div>
-									<div class='pad d-flex justify-content-between'>
-										<div><label class="font-weight-bold"><input type="radio">In Online Shop</label></div>
-										<div class="val text-muted">12</div>
-									</div>
+
+									<form action="" class="pad font-weight-bold">
+									  <label><input type="radio" name="gender" value="male" onchange="inStorage()">In Storage</label>
+									  <label><input type="radio" name="gender" value="female" onchange="inOnlineShop()">In Online-Shop</label>
+									</form>
 
 									<div class="brands d-flex justify-content-between font-weight-bold">
 										<div class="pad">Brands</div>
 										<div class="pad"><a href="#">All</a></div>
 									</div>
-									<div class='pad d-flex justify-content-between'>
-										<div><label class="font-weight-bold" onchange="apple()"><input type="checkbox" id='cb_apple'>Apple</label></div>
-										<div class="val text-muted">4</div>
-									</div>
-									<div class='pad d-flex justify-content-between'>
-										<div><label class="font-weight-bold"><input type="checkbox">JBL</label></div>
-										<div class="val text-muted">0</div>
-									</div>
-									<div class='pad d-flex justify-content-between'>
-										<div><label class="font-weight-bold" onchange='bose()'><input type="checkbox" id='cb_bose'>Bose</label></div>
-										<div class="val text-muted">1</div>
-									</div>
-									<div class='pad d-flex justify-content-between'>
-										<div><label class="font-weight-bold"><input type="checkbox">Nest</label></div>
-										<div class="val text-muted">0</div>
-									</div>
+									 <form action="" class="pad font-weight-bold">
+									  <label><input type="radio" name="gender" value="male" onchange="apple()">Apple</label>
+									  <label><input type="radio" name="gender" value="female">JBL</label>
+									   <label><input type="radio" name="gender" value="male" onchange="bose()">Bose</label>
+									  <label><input type="radio" name="gender" value="female">Nest</label>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -132,12 +119,22 @@
 								<div class="pad">Condition</div>
 								<div class="pad"><a href="#">All</a></div>
 							</div>
-							<div class="d-flex flex-column pad font-weight-bold">
-								<label onchange="condition_new()"><input type="checkbox" id='new'>New</label>
-								<label onchange="condition_manufacturer()"><input type="checkbox" id='manufacturer'>Manufacturer Refurbished</label>
-								<label><input type="checkbox">Seller Refurbished</label>
-								<label><input type="checkbox">Used</label>
-								<label><input type="checkbox">For Parts or not Working</label>
+							 <form action="" class="pad font-weight-bold">
+							  <label><input type="radio" name="gender" value="male" onchange="condition_new()">New</label>
+							  <label><input type="radio" name="gender" value="female" onchange="condition_manufacturer()">Manufacturer Refurbished</label>
+							   <label><input type="radio" name="gender" value="male" onchange="bose()">Seller Refurbished</label>
+							  <label><input type="radio" name="gender" value="female" onchange="inOnlineShop()">Used</label>
+							  <label><input type="radio" name="gender" value="female" onchange="inOnlineShop()">For Parts or not Working</label>
+							</form>
+						</div>
+						<div class="fourth_col font-weight-bold">
+							<div class="condition d-flex justify-content-between font-weight-bold">
+								<div class="pad">Delivery Options</div>
+							</div>
+							<div class="d-flex justify-content-around labels">
+							  <label class='lbl_1'><input type="radio" name="gender">Free</label>
+							  <hr>
+							  <label class='lbl_2'><input type="radio" name="gender">$4.99</label>
 							</div>
 						</div>
 					</div>
@@ -152,15 +149,59 @@
 								<h6 class='text-muted'>Black</h6>
 								<h5>$49.99</h5>
 							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Payment</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							         Are you sure you want to buy it?
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 						</div>
 					</div>
-					<div class="item manufacturer free seller_refurbished" id='item'>
+					<div class="item manufacturer free seller_refurbished inOnlineShop" id='item'>
 						<div class="img">
 							<img src="img/2.png" alt="">
 							<div class="text" id='text'>
 								<h4>Pebble Time</h4>
 								<h6 class='text-muted'>Red</h6>
 								<h5>$29.99</h5>
+							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Pebble Time</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $29.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -172,6 +213,28 @@
 								<h6 class='text-muted'>White</h6>
 								<h5>$49.99</h5>
 							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Zendure 4-Port USB</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $49.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 						</div>
 					</div>
 					<div class="item free">
@@ -181,6 +244,28 @@
 								<h4>Withings Smart Body Analyzer ws-50</h4>
 								<h6 class='text-muted'>Black</h6>
 								<h5>$39.99</h5>
+							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Withings Smart Body Analyzer ws-50</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $39.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -192,15 +277,59 @@
 								<h6 class='text-muted'>Black</h6>
 								<h5>$899.99</h5>
 							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Apple TV 32GB</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $899.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 						</div>
 					</div>
-					<div class="item computers apple">
+					<div class="item computers apple inOnlineShop">
 						<div class="img">
 							<img src="img/6.png" alt="">
 							<div class="text" id='text'>
 								<h4>Apple IMac 2017</h4>
 								<h6 class='text-muted'>Black</h6>
 								<h5>$999.99</h5>
+							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Apple TV 32GB</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $999.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -212,6 +341,28 @@
 								<h6 class='text-muted'>Silver</h6>
 								<h5>$19.99</h5>
 							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Ollo Clip New</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $19.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 						</div>
 					</div>
 					<div class="item free">
@@ -222,15 +373,59 @@
 								<h6 class='text-muted'>Black</h6>
 								<h5>$19.99</h5>
 							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Fitbit Charge HR Heart Rate and Activity Tracker</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $19.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 						</div>
 					</div>
-					<div class="item inStorage">
+					<div class="item inStorage inOnlineShop">
 						<div class="img">
 							<img src="img/9.png" alt="">
 							<div class="text" id='text'>
 								<h4>Apple Watch Sport 38mm Silver Aluminum Case</h4>
 								<h6 class='text-muted'>White</h6>
 								<h5>$49.99</h5>
+							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Apple Watch Sport 38mm Silver Aluminum Case</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $49.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -242,16 +437,59 @@
 								<h6 class='text-muted'>White</h6>
 								<h5>$119.99</h5>
 							</div>
-							
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Bose SoundLink On-Ear Headphones</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $119.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 						</div>
 					</div>
-					<div class="item tv_audio new" id='item'>
+					<div class="item tv_audio new inOnlineShop" id='item'>
 						<div class="img">
 							<img src="img/11.png" alt="">
 							<div class="text" id='text'>
 								<h4>Dynamik</h4>
 								<h6 class='text-muted'>Black</h6>
 								<h5>$49.99</h5>
+							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Apple TV 32GB</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        That will be $49.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -262,6 +500,28 @@
 								<h4>Apple MackBook Pro Retina 17</h4>
 								<h6 class='text-muted'>Black</h6>
 								<h5>$899.99</h5>
+							</div>
+							<button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
+							  <i class="fas fa-shopping-cart" style="margin-right: 10px"></i>Buy
+							</button>
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLongTitle">Sonos Play-1 Wireless HiFi System</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div>
+							        That will be $899.99
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-info" data-dismiss="modal">Discard</button>
+							        <button type="button" class="btn btn-success">Confirm</button>
+							      </div>
+							    </div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -389,11 +649,11 @@
 		</div>
 		<div>
 			<ul class='font-weight-bold'>
-				<li>Home</li>
+				<li><a href="index.html">Home</a></li>
 				<li>Shop</li>
 				<li>Team</li>
-				<li>About us</li>
-				<li><a href="comments/index.html">Contacts</a></li>
+				<li><a href="comments/index.html">Comments</a></li>
+				<li><a>Contacts</a></li>
 			</ul>
 		</div>
 		<div class='links'>

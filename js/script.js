@@ -146,6 +146,10 @@ let inStorage = () => {
 	$('.item').fadeOut(0);
 	$('.inStorage').fadeIn(1000);
 }
+let inOnlineShop = () => {
+	$('.item').fadeOut(0);
+	$('.inOnlineShop').fadeIn(1000);
+}
 let checkbox_3 = document.getElementById('free')
 
 let free = () => {

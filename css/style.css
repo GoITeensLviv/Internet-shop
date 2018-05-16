@@ -167,6 +167,7 @@ ul{
 }
 .text h6{
 	font-size: 12px;
+	width: 174px;
 }
 .text h5{
 	font-size: 14px;
@@ -194,6 +195,10 @@ ul{
 	height: 2px;
 	bottom: 0px;
 	background: #CECECEFF;
+}
+form{
+	display: flex;
+	flex-direction: column;
 }
 label{
 	margin:0px;
@@ -255,6 +260,24 @@ label{
 	height: 2px;
 	bottom: 0px;
 	background: #CECECEFF;
+}
+
+/* Forth col */
+
+.fourth_col{
+	margin-top: 30px;
+	background: white;
+	width: 290px;
+	border-radius: 10px;
+}
+.labels{
+	position: relative;
+}
+.fourth_col hr{
+	height: 37px;
+	background: #CECECEFF;
+	width: 2px;
+	margin:0px;
 }
 
 /* Pages */
