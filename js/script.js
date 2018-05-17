@@ -162,7 +162,9 @@ let free = () => {
 	}
 }
 
-
+const sorry = () => {
+	alert("Sorry but we don't have any goods left");
+}
 
 // let priceFr = () => {
 // 	console.log( $( this ).innerHTML = '1' )

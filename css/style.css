@@ -299,6 +299,8 @@ label{
 }
 .nums{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .nums .nums_item{
 	display: flex;
@@ -315,6 +317,13 @@ label{
 	color: #B9BED1FF;
 	border-radius: 50%;
 }
+.left_arrow{
+	cursor: pointer;
+}
+.right_arrow{
+	cursor: pointer;
+}
+
 
 /* Clothes */
 
@@ -334,6 +343,7 @@ label{
 }
 .clothes_item{
 	width: 285px;
+	cursor: pointer;
 }
 .clothes_item img{
 	max-width: 200px;
@@ -492,7 +502,26 @@ ul li{
 		text-align: center;
 	}
 }
+@media (min-width: 1085px) and (max-width: 1442px) {
+	.clothes_item{
+		width: 400px;
+	}
+}
 
+@media (max-width: 1442px) {
+	.people_item{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 800px) {
+	.first_filtr_block{
+		display: flex;
+		justify-content: flex-start;
+	}
+	.first_filtr_block div{
+		
+	}
+}
 
 
 
