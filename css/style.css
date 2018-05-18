@@ -3,7 +3,6 @@ body{
 	padding: 0;
 	background: #E4E5E7;
 	font-family: 'Montserrat', sans-serif;
-	min-height: 7000px;
 }
 input{
 	margin-right: 7px;
@@ -12,6 +11,14 @@ input{
 	
 }
 
+/* Register form */
+
+.register{
+	
+}
+
+
+/*                     Main              */
 /* First filtr block */
 
 .wrapper{
@@ -160,6 +167,7 @@ ul{
 }
 .text h6{
 	font-size: 12px;
+	width: 174px;
 }
 .text h5{
 	font-size: 14px;
@@ -187,6 +195,10 @@ ul{
 	height: 2px;
 	bottom: 0px;
 	background: #CECECEFF;
+}
+form{
+	display: flex;
+	flex-direction: column;
 }
 label{
 	margin:0px;
@@ -250,6 +262,24 @@ label{
 	background: #CECECEFF;
 }
 
+/* Forth col */
+
+.fourth_col{
+	margin-top: 30px;
+	background: white;
+	width: 290px;
+	border-radius: 10px;
+}
+.labels{
+	position: relative;
+}
+.fourth_col hr{
+	height: 37px;
+	background: #CECECEFF;
+	width: 2px;
+	margin:0px;
+}
+
 /* Pages */
 
 .pages{
@@ -262,10 +292,15 @@ label{
 	margin-top: 50px;
 	background: white;
 	border-radius: 10px;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
 	
 }
 .nums{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .nums .nums_item{
 	display: flex;
@@ -282,6 +317,13 @@ label{
 	color: #B9BED1FF;
 	border-radius: 50%;
 }
+.left_arrow{
+	cursor: pointer;
+}
+.right_arrow{
+	cursor: pointer;
+}
+
 
 /* Clothes */
 
@@ -301,6 +343,7 @@ label{
 }
 .clothes_item{
 	width: 285px;
+	cursor: pointer;
 }
 .clothes_item img{
 	max-width: 200px;
@@ -357,6 +400,63 @@ label{
 .sup{
 	margin-top: 15px;
 }
+
+/* Footer */
+
+footer{
+	background: #222;
+	color:white;
+	height: auto;
+}
+footer a{
+	text-decoration: none;
+	color:white;
+}
+footer a:hover{
+	text-decoration: none;
+	color:white;
+}
+.upper_footer{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 65px;
+	border-bottom: 1px solid #2D2E33;
+	margin-bottom: 50px;
+}
+.upper_footer div{
+	margin-top: 60px;
+}
+.portland{
+	font-family: 'Myriad Pro', sans-serif;
+}
+footer ul{
+	display: flex;
+	list-style: none;
+}
+ul li{
+	margin-left: 15px;
+}
+
+.lower_footer{
+	margin-left: 10%;
+	margin-right: 10%;
+	color:#7F7F81;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.lower_footer p{
+	width: 450px;
+}
+.lower_footer span{
+	margin-left: 30px;
+	font-weight: bold;
+}
+.links i {
+	margin-left: 15px;
+}
+.spans{
+	margin-bottom: 50px;
+}
 @media (max-width: 749px){
 	.another_wrapper{
 		display: block;
@@ -390,6 +490,7 @@ label{
 	    margin-bottom: 10px;
 	}
 }
+
 @media (max-width: 877px){
 	.sub{
 		display: flex;
@@ -401,7 +502,26 @@ label{
 		text-align: center;
 	}
 }
+@media (min-width: 1085px) and (max-width: 1442px) {
+	.clothes_item{
+		width: 400px;
+	}
+}
 
+@media (max-width: 1442px) {
+	.people_item{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 800px) {
+	.first_filtr_block{
+		display: flex;
+		justify-content: flex-start;
+	}
+	.first_filtr_block div{
+		
+	}
+}
 
 
 
